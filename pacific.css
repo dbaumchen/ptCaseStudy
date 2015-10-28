@@ -21,7 +21,7 @@ h1 { padding: 10px; margin: 0;
 main { padding: 1px 20px 20px; 
        margin-left: 190px; 
        background-color: #FFFFFF;}
-#mobileimage { display: none; }
+.mobile { display: none; }
 nav { background-color: #90C7E3; 
       font-weight: bold; 
       padding: 5px 5px 5px 20px; 
@@ -120,8 +120,9 @@ img { float: none;
     main { padding: 0.1em 1em; 
            margin: 0; 
            font-size: 90%; }
-    #mobileimage { display: block; 
-                   height: 250px; }
+    .desktop { display: none; }
+    .mobile { display: block; 
+              width: 100% }
     #homehero { background-image: none; 
                 height: 0; }
     #trailhero { background-image: none; 
