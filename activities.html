@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Activities</title>
+  <title>Pacific Trails::Activities</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="pacific.css">
+  <!--[If lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 </head>
 <body>
 <div id="wrapper">
@@ -11,11 +14,16 @@
     <h1> Pacific Trails Resort</h1>
 </header>
 <nav>
-        <a href="index.html">Home</a> &nbsp; <a href="yurts.html">Yurts</a> &nbsp; <a href="activities.html">Activities</a> &nbsp; <a href="reservations.html">Reservations</a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yurts.html">Yurts</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+    </ul>
 </nav>
+    <div id="trailhero">
     <main id="content">
     <h2>The Activities at Pacific Trails</h2>
-    <img src="images/trail.jpg" width="320" height="250" alt="pacific coast hiking trail">
     <h3>Hiking</h3>
     <p>Pacific Trails Resort has 5 miles of hiking trails and is adjacent to a state park. Go it alone or join one        of our guided hikes.</p>
     <h3>Kayaking</h3>
@@ -23,7 +31,35 @@
     <h3>Bird Watching</h3>
     <p>While anytime is a good time for bird watching at Pacific Trails, we offer guided birdwatching trips 
     <br>at sunrise several times a week.</p>
+    <div id="gallery">
+        <a id="placeholder" href="images/photo5.jpg"><img src="images/photo5.jpg" width="200"
+            height="150" alt="Pacific Coastline"></a>
+    <ul>
+
+        <li><a href="images/photo2.jpg"><img src="images/photo2thumb.jpg" width="100" 
+            height="75" alt="Rocky Coastline">
+            <span><img src="images/photo2.jpg" width="200" height="150"
+            alt="Rocky Coastline"><br>Rocky Coastline</span></a>
+        </li>
+        <li><a href="images/photo3.jpg"><img src="images/photo3thumb.jpg" width="100"
+            height="75" alt="Coastal Mountains">
+            <span><img src="images/photo3.jpg" width="200" height="150"
+            alt="Coastal Mountains"><br>Coastal Mountains</span></a>
+        </li>
+        <li><a href="images/photo4.jpg"><img src="images/photo4thumb.jpg" width="100"
+            height="75" alt="Turquoise Waters">
+            <span><img src="images/photo4.jpg" width="200" height="150"
+            alt="Turquoise Waters"><br>Turquoise Waters</span></a>
+        </li>
+        <li><a href="images/photo6.jpg"><img src="images/photo6thumb.jpg" width="100"
+            height="75" alt="Sunset on the Coast">
+            <span><img src="images/photo6.jpg" width="200" height="150"
+            alt="Sunset on the Coast"><br>Sunset on the Coast</span></a>
+        </li>
+    </ul>
+    </div>
     </main>
+    </div>
 <footer>Copyright &copy; 2014 Pacific Trails Resort<br>
 <a href="mailto:Bea@Baumchen.com">bea@baumchen.com</a>
 </footer>

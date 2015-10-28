@@ -13,23 +13,58 @@ header { background-color: #000033;
          background-repeat: no-repeat; 
          color: #FFFFFF; 
          font-family: Georgia,Times,"Times New Roman",serif; 
-         margin-bottom: 0;
-         text-align: center; }
-h1 { padding: 10px; }
+         text-align: center;
+         margin-bottom: 0; }
+h1 { padding: 10px; 
+     font-family: Georgia,Times,"Times New Roman",serif; }
 main {padding: 1px 20px 20px; }
 nav { background-color: #90C7E3; 
       font-weight: bold; 
-      padding: 5px 5px 5px 20px; }
-nav a {text-decoration: none; }
+    padding: 1px 5px 5px 20px; }
+nav ul { list-style-type: none; }
+nav li { display: inline; }
+nav a { text-decoration: none; }
+nav a:link { color: #000033; }
+nav a:visited { color: #344873; }
+nav a:hover { color: #FFFFFF; }
 h2 { color: #3399CC; 
-     text-shadow: 1px 1px 0 #666666; }
+     text-shadow: 1px 1px 0 #666666; 
+     font-family: Georgia,Times,"Times New Roman",serif; }
 .resort { color: #5C7FA3; 
           font-weight: bold; }
-h3 { color: #000033; }
+h3 { color: #000033; 
+     font-family: Georgia,Times,"Times New Roman",serif; }
 ul { list-style-image: url(images/marker.gif); }
 #contact {font-size: 90%; }
-footer { font-family: Georgia,Times,"Times New Roman",serif; 
+footer { clear: left; 
+         font-family: Georgia,Times,"Times New Roman",serif; 
          font-size: 75%; 
          font-style: italic; 
          text-align: center;
          padding: 20px; }
+header, main, nav, footer, figure, figcaption, aside, section, article { display: block; }
+#homehero { background-image: url(images/coasthero.jpg); 
+            background-repeat: no-repeat;
+            background-size: 100% 300px; }
+#yurthero { background-image: url(images/yurthero.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 300px; }
+#trailhero { background-image: url(images/trailhero.jpg);
+             background-repeat: no-repeat; 
+             background-size: 100% 300px; }
+#gallery { position: relative; 
+            height: 200px; }
+img { float: none;
+      padding: 0; }
+#placeholder { position: absolute;
+               left: 320px;
+               top: 15px; 
+               opacity: .25; }
+#gallery ul { width: 250px; list-style-type: none; }
+#gallery li { display: inline; float: left; padding: 10px; 
+              font-style: italic; }
+#gallery a:link { color: #666666; 
+                  text-decoration: none; }
+#gallery span { display: none; }
+#gallery a:hover span { display: block; position: absolute;
+         top: 15px; left: 320px; text-align: center; }
