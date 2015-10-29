@@ -1,5 +1,5 @@
 header, main, nav, footer, figure, figcaption, aside, section, article { display: block; }
-body { background-image: url(images/ptrbackground.jpg); 
+body { background-image: linear-gradient(to bottom, #FFFFFF, #4F6D93); 
        color: #666666; 
        font-family: Arial,"Helvetica Neue",Helvetica,sans-serif; }
 #wrapper { background-color: #90C7E3; 
@@ -20,7 +20,7 @@ h1 { padding: 10px; margin: 0;
      font-family: Georgia,Times,"Times New Roman",serif; }
 main { padding: 1px 20px 20px; 
        margin-left: 190px; 
-       background-color: #FFFFFF;}
+       background-color: #FFFFFF; }
 .mobile { display: none; }
 nav { background-color: #90C7E3; 
       font-weight: bold; 
@@ -35,7 +35,8 @@ nav li { padding: 5px;
 nav a { text-decoration: none; }
 nav a:link { color: #000033; }
 nav a:visited { color: #344873; }
-nav a:hover { color: #FFFFFF; }
+nav a:hover { color: #FFFFFF; 
+              transition: 0.5s ease-out; }
 h2 { color: #3399CC; 
      text-shadow: 1px 1px 0 #666666; 
      font-family: Georgia,Times,"Times New Roman",serif; }
@@ -84,6 +85,21 @@ img { float: none;
 #gallery span { display: none; }
 #gallery a:hover span { display: block; position: absolute;
          top: 15px; left: 320px; text-align: center; }
+table { border: 1px;
+        border-color: #3399CC; 
+        width: 80%;
+        border-spacing: 0; }
+th, td { border: 1px solid #3399CC; padding: 5px; 
+         text-align: center; }
+.altrow { background-color: #F5FAFC; }
+label { float: left; display: block; 
+        width: 120px; padding-right: 5px; 
+        margin-bottom: 20px; text-align-last: right; }
+input { display: block; margin-bottom: 20px; }
+textarea { display: block; margin-bottom: 20px; }
+input[type="submit"] { display: block; margin-left: 130px; }
+video { float: right; 
+        padding-left: 20px; }
 @media only screen and (max-width: 780px) {
     nav { float: none; 
           width: auto; 
@@ -103,13 +119,15 @@ img { float: none;
     #yurthero { margin-left: 0; }
     #trailhero { margin-left: 0; } 
     footer { margin-left: 0; }
+    video { float: none; }
 }
 @media only screen and (max-width: 550px) {
     #gallery {display: none; }
 }
 @media only screen and (max-width: 480px) {
-    nav { padding: 0; 
+    nav { padding: 0;  
           font-size: 1em; }
+    nav ul { padding: 0; }
     nav li { display: block; 
              margin: 0px; 
              padding: 0.3em; 
@@ -130,4 +148,6 @@ img { float: none;
     #yurthero { background-image: none; 
                 height: 0; }
     h1 { font-size: 1.5em; }   
+    textarea {float: none; }
+    video {display: none; }
 }
